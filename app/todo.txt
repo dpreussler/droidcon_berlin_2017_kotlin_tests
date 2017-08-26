@@ -1,0 +1,22 @@
+show apply with mockito
+no need for @Mock
+exceptions
+extension functions
+
+inOrder with apply
+inOrder with mockito
+argumentCapture
+
+mockito
+any
+mock()
+show {} with on
+
+get rid of setup
+
+
+kluent
+
+infix
+
+show our retrofit kram
