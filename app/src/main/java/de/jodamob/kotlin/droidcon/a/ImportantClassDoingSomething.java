@@ -1,4 +1,4 @@
-package de.jodamob.kotlin.droidcon;
+package de.jodamob.kotlin.droidcon.a;
 
 public class ImportantClassDoingSomething {
 
