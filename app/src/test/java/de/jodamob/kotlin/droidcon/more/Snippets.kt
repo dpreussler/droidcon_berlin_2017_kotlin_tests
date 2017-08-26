@@ -1,5 +1,14 @@
 package de.jodamob.kotlin.droidcon.more
 
+
+var jsonText = """
+    {
+        "channels":{
+            "BOOKING":1443439538,
+            "GTG":1443439537
+         }
+    }"""
+
 //build map
 //use apply on mock
 //extension function for better readability
