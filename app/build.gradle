@@ -35,6 +35,7 @@ dependencies {
 
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
 
-    testCompile "com.nhaarman:mockito-kotlin:1.4.0"
     testCompile 'org.amshove.kluent:kluent:1.21'
+
+    testCompile "com.nhaarman:mockito-kotlin:1.4.0"
 }
