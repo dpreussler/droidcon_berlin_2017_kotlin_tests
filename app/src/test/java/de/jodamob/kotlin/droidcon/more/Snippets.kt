@@ -1,5 +1,10 @@
 package de.jodamob.kotlin.droidcon.more
 
+import org.amshove.kluent.`should contain`
+import org.amshove.kluent.`should equal`
+import org.junit.Test
+import kotlin.reflect.KFunction1
+
 
 var jsonText = """
     {
@@ -9,6 +14,21 @@ var jsonText = """
          }
     }"""
 
+
+@Test
+fun should_greet() {
+    calling { tested::greet } with "Droidcon" `should equal` "Hello Droidcon"
+}
+
+@Test
+fun should_be_international() {
+    tested.someGreetings `should contain` "Hallo"
+}
+
+infix fun calling(function: () -> KFunction1<String, String>) = function
+
+infix fun (() -> KFunction1<String, String>).with(argument: String) =
+        this.invoke().invoke(argument)
 //build map
 //use apply on mock
 //extension function for better readability
