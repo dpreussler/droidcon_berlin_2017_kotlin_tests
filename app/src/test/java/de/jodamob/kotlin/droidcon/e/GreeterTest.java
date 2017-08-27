@@ -13,7 +13,8 @@ public class GreeterTest {
 
     @Test
     public void should_greet() {
-        assertEquals("Hello Droidcon", tested.greet("Droidcon"));
+        String greeting = tested.greet("Droidcon");
+        assertEquals("Hello Droidcon", greeting);
     }
 
     @Test
