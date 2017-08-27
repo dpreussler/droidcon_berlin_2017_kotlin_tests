@@ -6,9 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static junit.framework.Assert.assertTrue;
-import static org.junit.Assert.assertFalse;
 
-public class RadioStateTest {
+public class RadioState1Test {
 
     @Test
     public void should_calculate_strengths() {
@@ -18,12 +17,5 @@ public class RadioStateTest {
         signalStrength.put(RadioState.SignalTypes.WIFI, 0);
 
         assertTrue(RadioState.isSignalStrongEnough(signalStrength));
-    }
-
-    @Test
-    public void should_be_off() {
-        RadioState tested = RadioState.ALL_OFF;
-        assertFalse(tested.isCellularNetworkConnected());
-        assertFalse(tested.isWifiNetworkConnected());
     }
 }
