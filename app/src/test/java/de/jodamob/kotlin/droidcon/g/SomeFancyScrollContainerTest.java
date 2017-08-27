@@ -1,4 +1,4 @@
-package de.jodamob.kotlin.droidcon;
+package de.jodamob.kotlin.droidcon.g;
 
 import android.content.Context;
 import android.view.MotionEvent;
