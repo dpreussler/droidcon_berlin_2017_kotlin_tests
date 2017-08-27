@@ -3,6 +3,8 @@ package de.jodamob.kotlin.droidcon.c;
 
 import org.junit.Test;
 
+import java.util.Map;
+
 import static junit.framework.Assert.assertEquals;
 
 public class AwesomeParserTest {
@@ -12,6 +14,7 @@ public class AwesomeParserTest {
 
     @Test
     public void should_parse() {
-        assertEquals(1443439538, tested.parse(jsonText).get("BOOKING").intValue());
+        Map<String, Integer> parsed = tested.parse(jsonText);
+        assertEquals(1443439538, parsed.get("BOOKING").intValue());
     }
 }
