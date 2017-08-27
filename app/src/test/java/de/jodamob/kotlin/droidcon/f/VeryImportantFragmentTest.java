@@ -7,11 +7,18 @@ import org.mockito.InOrder;
 
 import static org.mockito.Mockito.inOrder;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 public class VeryImportantFragmentTest {
 
     Bundle bundle = mock(Bundle.class);
     VeryImportantFragment tested = new VeryImportantFragment();
+
+    @Test
+    public void readsFromBundle() {
+        tested.onCreate(bundle);
+        verify(bundle).getString("secretKey1");
+    }
 
     @Test
     public void testWritesToBundle() {
