@@ -21,7 +21,7 @@ public class VeryImportantFragmentTest {
     }
 
     @Test
-    public void testWritesToBundle() {
+    public void writesToBundle() {
         InOrder verifier = inOrder(bundle);
 
         tested.onSaveInstanceState(bundle);
