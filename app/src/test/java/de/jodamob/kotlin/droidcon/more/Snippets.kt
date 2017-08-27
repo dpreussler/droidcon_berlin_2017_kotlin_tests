@@ -1,10 +1,5 @@
 package de.jodamob.kotlin.droidcon.more
 
-import org.amshove.kluent.`should contain`
-import org.amshove.kluent.`should equal`
-import org.junit.Test
-import kotlin.reflect.KFunction1
-
 
 var jsonText = """
     {
@@ -15,20 +10,20 @@ var jsonText = """
     }"""
 
 
-@Test
-fun should_greet() {
-    calling { tested::greet } with "Droidcon" `should equal` "Hello Droidcon"
-}
+//@Test
+//fun should_greet() {
+//    calling { tested::greet } with "Droidcon" `should equal` "Hello Droidcon"
+//}
 
-@Test
-fun should_be_international() {
-    tested.someGreetings `should contain` "Hallo"
-}
-
-infix fun calling(function: () -> KFunction1<String, String>) = function
-
-infix fun (() -> KFunction1<String, String>).with(argument: String) =
-        this.invoke().invoke(argument)
+//@Test
+//fun should_be_international() {
+//    tested.someGreetings `should contain` "Hallo"
+//}
+//
+//infix fun calling(function: () -> KFunction1<String, String>) = function
+//
+//infix fun (() -> KFunction1<String, String>).with(argument: String) =
+//        this.invoke().invoke(argument)
 //build map
 //use apply on mock
 //extension function for better readability
@@ -58,4 +53,20 @@ infix fun (() -> KFunction1<String, String>).with(argument: String) =
 //    tested.onScroll(START_SCROLL, START_SCROLL)
 //
 //    verify(scrollListener, never()).onStopped()
+//}
+
+//@Test
+//fun readFromBundle() {
+//    tested.onCreate(bundle)
+//
+//    Verify on bundle that bundle.getString("secretKey1") was called
+//
+//    tested.importantState `should equal` "this is a test"
+//}
+
+//@Test
+//fun `should throw if empy`() {
+//    val tested = ImportantClassCheckingSomething()
+//    val function = {tested.dontletItHappen("")}
+//    function `should throw` IllegalArgumentException::class `with message` "was empty"
 //}
