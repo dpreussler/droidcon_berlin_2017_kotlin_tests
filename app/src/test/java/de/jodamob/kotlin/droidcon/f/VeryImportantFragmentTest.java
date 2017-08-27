@@ -5,8 +5,6 @@ import android.os.Bundle;
 import org.junit.Test;
 import org.mockito.InOrder;
 
-import de.jodamob.kotlin.droidcon.f.VeryImportantFragment;
-
 import static org.mockito.Mockito.inOrder;
 import static org.mockito.Mockito.mock;
 
