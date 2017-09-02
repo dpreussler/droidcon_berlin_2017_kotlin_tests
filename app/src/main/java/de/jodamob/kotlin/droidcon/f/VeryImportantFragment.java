@@ -3,6 +3,7 @@ package de.jodamob.kotlin.droidcon.f;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.widget.Adapter;
 
 public class VeryImportantFragment extends Fragment {
 
@@ -30,4 +31,8 @@ public class VeryImportantFragment extends Fragment {
         outState.putString(SECRET_KEY_1, veryImportantState);
         outState.putInt(SECRET_KEY_2, 2);
     }
+
+    public void setAdapter(Adapter adapter) {}
+    public Adapter getAdapter() { return null;}
+
 }
